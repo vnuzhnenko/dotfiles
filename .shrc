@@ -1,0 +1,35 @@
+#!/bin/sh
+
+# If interactive shows banner message
+if [ -n "${PS1}" ]
+then
+	echo "[.shrc begin]"
+fi
+
+umask 22
+
+# Build valid PATH
+export PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/X11R6/bin
+
+# Show disk information in K-Blocks
+export BLOCKSIZE=K
+
+export LANG=en_US.UTF-8
+export MM_CHARSET=UTF-8
+export LC_ALL=en_US.UTF-8
+
+# Set default PAGER && EDITOR && VISUAL
+export PAGER=/usr/bin/less
+export EDITOR=vim
+export VISUAL=vim
+export BROWSER=links
+
+export RSYNC_RSH=ssh
+export MYSQL_PS1="[\d] > "
+export LSCOLORS="Exfxcxdxbxegedabagacad" # man ls
+
+# If interactive shows banner message
+if [ -n "${PS1}" ]
+then
+	echo "[.shrc end]"
+fi

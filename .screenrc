@@ -1,0 +1,6 @@
+startup_message off   # switch off the invite message
+nethack on            # Nicer messages
+vbell off             # I hate barking dogs :P
+
+# applyed .bashrc
+shell -$SHELL

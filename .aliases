@@ -1,0 +1,20 @@
+alias mv='nocorrect mv'       # no spelling correction on mv
+alias cp='nocorrect cp'       # no spelling correction on cp
+alias mkdir='nocorrect mkdir' # no spelling correction on mkdir
+
+alias b='${BROWSER}'
+alias e='${EDITOR}'
+alias p='${PAGER}'
+alias l='ls -loAF --color'
+alias tt='traceroute'
+alias tl='tail -f'
+alias scr='screen'
+alias vol='mixer vol'
+
+alias .='cd ..'
+alias ..='cd ../..'
+alias ...='cd ../../..'
+alias ....='cd ../../../..'
+alias .....='cd ../../../../..'
+alias ......='cd ../../../../../..'
+
